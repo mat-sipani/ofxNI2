@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		607076A71732686A0068FE37 /* libNiTE2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 607076781732686A0068FE37 /* libNiTE2.dylib */; };
-		607076A81732686A0068FE37 /* libFreenectDriver.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 607076A11732686A0068FE37 /* libFreenectDriver.dylib */; };
-		607076A91732686A0068FE37 /* libOniFile.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 607076A21732686A0068FE37 /* libOniFile.dylib */; };
-		607076AA1732686A0068FE37 /* libPS1080.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 607076A31732686A0068FE37 /* libPS1080.dylib */; };
 		607076AB1732686A0068FE37 /* libOpenNI2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 607076A41732686A0068FE37 /* libOpenNI2.dylib */; };
 		607076AE173275A30068FE37 /* ofxNiTE2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 607076AC173275A30068FE37 /* ofxNiTE2.cpp */; };
 		60E7469217048F9D004BE403 /* ofxNI2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60E7468C17048F9D004BE403 /* ofxNI2.cpp */; };
@@ -100,9 +97,6 @@
 		6070769A1732686A0068FE37 /* OpenNI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenNI.h; sourceTree = "<group>"; };
 		6070769B1732686A0068FE37 /* PS1080.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PS1080.h; sourceTree = "<group>"; };
 		6070769D1732686A0068FE37 /* OniPlatformWin32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OniPlatformWin32.h; sourceTree = "<group>"; };
-		607076A11732686A0068FE37 /* libFreenectDriver.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libFreenectDriver.dylib; sourceTree = "<group>"; };
-		607076A21732686A0068FE37 /* libOniFile.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libOniFile.dylib; sourceTree = "<group>"; };
-		607076A31732686A0068FE37 /* libPS1080.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libPS1080.dylib; sourceTree = "<group>"; };
 		607076A41732686A0068FE37 /* libOpenNI2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libOpenNI2.dylib; sourceTree = "<group>"; };
 		607076A51732686A0068FE37 /* OpenNI.ini */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenNI.ini; sourceTree = "<group>"; };
 		607076A61732686A0068FE37 /* PS1080.ini */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PS1080.ini; sourceTree = "<group>"; };
@@ -159,9 +153,6 @@
 				E4C2424910CC5A17004149E2 /* IOKit.framework in Frameworks */,
 				E7E077E515D3B63C0020DFD4 /* CoreVideo.framework in Frameworks */,
 				607076A71732686A0068FE37 /* libNiTE2.dylib in Frameworks */,
-				607076A81732686A0068FE37 /* libFreenectDriver.dylib in Frameworks */,
-				607076A91732686A0068FE37 /* libOniFile.dylib in Frameworks */,
-				607076AA1732686A0068FE37 /* libPS1080.dylib in Frameworks */,
 				607076AB1732686A0068FE37 /* libOpenNI2.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,22 +323,11 @@
 		6070769F1732686A0068FE37 /* osx */ = {
 			isa = PBXGroup;
 			children = (
-				607076A01732686A0068FE37 /* Drivers */,
 				607076A41732686A0068FE37 /* libOpenNI2.dylib */,
 				607076A51732686A0068FE37 /* OpenNI.ini */,
 				607076A61732686A0068FE37 /* PS1080.ini */,
 			);
 			path = osx;
-			sourceTree = "<group>";
-		};
-		607076A01732686A0068FE37 /* Drivers */ = {
-			isa = PBXGroup;
-			children = (
-				607076A11732686A0068FE37 /* libFreenectDriver.dylib */,
-				607076A21732686A0068FE37 /* libOniFile.dylib */,
-				607076A31732686A0068FE37 /* libPS1080.dylib */,
-			);
-			path = Drivers;
 			sourceTree = "<group>";
 		};
 		60ACDB1116FB6E5300C5EF19 /* ofxNI2 */ = {
@@ -494,6 +474,8 @@
 /* Begin PBXProject section */
 		E4B69B4C0A3A1720003C02F2 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "example-user-tracker" */;
 			compatibilityVersion = "Xcode 2.4";
 			developmentRegion = English;

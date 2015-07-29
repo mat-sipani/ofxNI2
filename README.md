@@ -1,3 +1,6 @@
+It is a fork of  satoruhiga/ofxNI2 aimed at compatibility with Kinect model 1473.
+
+
 OSX:
 
 Add to Run Script
